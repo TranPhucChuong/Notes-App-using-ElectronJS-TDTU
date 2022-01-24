@@ -1,0 +1,19 @@
+{
+  "name": "TDTU",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64  --prune=true --out=release-builds",
+    "package-win": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=win32 --arch=ia32  --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Note1\"",
+    "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=linux --arch=x64  --prune=true --out=release-builds"
+  },
+  "keywords": [],
+  "author": "CHUONG",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^11.5.0",
+    "mongoose": "^5.9.7"
+  }
+}
